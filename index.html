@@ -2,16 +2,33 @@
 <html>
 <head>
 	<title>Higher or Lower Game</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src="./js/script.js"></script>
+
 
 </head>
 <body>
 	<!-- Container -->
-	<div id="container">
+	<div id="container" class="textBlue">
 
+		<!-- Top Panel -->
+		<div class="panel ">
+			<h2 class="">I have a random number<br> between 1-100</h2>
+			<h3 class="">Dare to guess?</h3>
+			<button>New Game</button>
+		</div>
+
+		<!-- Middle Panel -->
 		<div class="panel">
-			<h2 class="textBlue">I have a random number<br> between 1-100</h2>
-			<h3 class="textBlue">Dare to guess?</h3>
+			<h3 class="">Enter your text below & press "enter"</h3>
+			<input type="number">
+			<p>Number of previous attempts:<span>0</span></p>
+		</div>
+
+		<!-- Bottom panel -->
+			<div class="panel">
+			<p>Your previous guesses:</p>
+			<P id="guessLog"></P>
 		</div>
 
 	</div>

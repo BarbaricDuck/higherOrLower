@@ -1,3 +1,8 @@
+body{
+	font-size: 1.4em;
+	background: url("../img/numbers-wallpaper-3840x2160.jpg");
+	background-size: cover;	
+}
 .textBlue{
-	color: blue;
+	color: #2525a7;
 }
