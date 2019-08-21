@@ -1,8 +1,72 @@
 body{
 	font-size: 1.4em;
-	background: url("../img/numbers-wallpaper-3840x2160.jpg");
+	background: url("../img/numbers-wallpaper-3840x2160.jpg") no-repeat center center fixed;
 	background-size: cover;	
+	
+	
 }
 .textBlue{
-	color: #2525a7;
+	color: #206040;
 }
+#container{
+	max-width: 80%;
+	margin:0 auto;
+	text-align: center;
+	background-color: #602040;
+	font-family: "Bahnschrift SemiBold";
+	opacity: 0.98;
+	border-radius: 10px;
+	padding: 10px;
+}
+.panel{
+	max-width: 80%;
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #eee
+}
+
+/*NewGameButton*/
+.myButton1 {
+	-moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background-color:#204060;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#CD8236;
+	font-family:Arial;
+	font-size:0.8em;
+	font-weight:bold;
+	padding:10px 14px;
+	text-decoration:none;
+	width:60%;
+	
+}
+.myButton1:hover {
+	background-color:#14283C;
+}
+.myButton1:active {
+	position:relative;
+	top:1px;
+}
+input{
+	
+	background-color:white;
+	display:inline-block;
+	color:white;
+	font-family:Arial;
+	font-size:0.8em;
+	font-weight:bold;
+	padding:10px 14px;
+	width:60%;
+}
+input:hover{
+	color: grey;
+}
+
+

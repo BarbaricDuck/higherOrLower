@@ -7,21 +7,22 @@
 
 
 </head>
-<body>
+<body onload="init()">
+
 	<!-- Container -->
 	<div id="container" class="textBlue">
 
 		<!-- Top Panel -->
 		<div class="panel ">
 			<h2 class="">I have a random number<br> between 1-100</h2>
-			<h3 class="">Dare to guess?</h3>
-			<button>New Game</button>
+			<h3 class="">Dare to guess?</h3><hr>
+			<button class = "myButton1" onclick="newGame()">New Game</button>
 		</div>
 
 		<!-- Middle Panel -->
 		<div class="panel">
-			<h3 class="">Enter your text below & press "enter"</h3>
-			<input type="number">
+			<h3 class="">Enter your guess below & press "enter"</h3>
+			<input  type="number">
 			<p>Number of previous attempts:<span>0</span></p>
 		</div>
 
