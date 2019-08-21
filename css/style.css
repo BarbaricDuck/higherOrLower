@@ -55,18 +55,33 @@ body{
 	top:1px;
 }
 input{
-	
-	background-color:white;
 	display:inline-block;
-	color:white;
 	font-family:Arial;
 	font-size:0.8em;
 	font-weight:bold;
 	padding:10px 14px;
 	width:60%;
+	
 }
 input:hover{
-	color: grey;
+	background-color: #F5F5F5;
 }
 
+input[type=image] {
+	background-color: #eee
+}
+/*stop input spinner*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+/*stop input spinner*/
+.difficulty{ 
+	width: 10%
+	}

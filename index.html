@@ -17,18 +17,24 @@
 			<h2 class="">I have a random number<br> between 1-100</h2>
 			<h3 class="">Dare to guess?</h3><hr>
 			<button class = "myButton1" onclick="newGame()">New Game</button>
+
+		</div>
+		<div class="panel">
+			<h3 id="iu">Difficulty: Easy<br>(10 guesses)</h3>
+			<input type="image" src="./img/switch-level-off.png" class="difficulty" onclick="changeDifficulty()" id="id">
+
 		</div>
 
 		<!-- Middle Panel -->
 		<div class="panel">
-			<h3 class="">Enter your guess below & press "enter"</h3>
-			<input  type="number">
-			<p>Number of previous attempts:<span>0</span></p>
+			<h3 id="textOutput" class="">Enter your guess below & press "enter"</h3>
+			<input  type="number" id="inputBox" onchange="function1()" >
+			<p>Number of previous attempts: <span id="previousLength" >0</span></p>
 		</div>
 
 		<!-- Bottom panel -->
 			<div class="panel">
-			<p>Your previous guesses:</p>
+			<p>Your previous guesses: <span id="previous"></span></p>
 			<P id="guessLog"></P>
 		</div>
 
