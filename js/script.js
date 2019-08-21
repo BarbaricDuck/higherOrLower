@@ -104,6 +104,7 @@ function gameOver(){
 	
 	gameOversfx.play();
 	alert("Game Over!");
+	newGame();
 
 	
 	
