@@ -103,7 +103,7 @@ function changeDifficulty(){
 function gameOver(){
 	
 	gameOversfx.play();
-	alert("Game Over! The correct answer was:");
+	alert("Game Over! The correct answer was:",answer);
 	newGame();
 
 	
