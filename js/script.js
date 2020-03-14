@@ -3,10 +3,10 @@ var incorrectsfx = new Audio('./sfx/incorrect.wav');
 var gameOversfx = new Audio('./sfx/gameOver.wav');
 var computorGuess;
 var guessLog = [];
-var difficulty = "easy"
+var difficulty = "easy";
 var switchsfx = new Audio('./sfx/switch.wav');
 var previousLength;
-
+var won = false;
 
 
 function init(){
@@ -16,6 +16,7 @@ function newGame(){
 	window.location.reload(false);
 }
 function compareGuess(){
+
 	var userGuess = document.getElementById('inputBox').value;
 	// dont allow guesses above 100
 	if (userGuess>100) {
@@ -45,12 +46,11 @@ function compareGuess(){
 
 	else{
 		document.getElementById("textOutput").innerHTML = "Correct!";
+		window.won = true;
 		correctsfx.play();
 		
 		
-		
-
-	}
+		}
 	document.getElementById('inputBox').value = "";
 	guessLog.push(userGuess)
 	document.getElementById('previous').innerHTML = guessLog;
@@ -101,16 +101,18 @@ function changeDifficulty(){
 
 }
 function gameOver(){
-	
+
 	gameOversfx.play();
-	alert(answer);
+	alert('The answer was: '+computorGuess);
+	
 	newGame();
 
 	
 	
 
 }
-function function1(){
+function main(){
 	compareGuess();
 	check();
+
 }
