@@ -43,8 +43,8 @@ class Game {
 			this.playSound("incorrect");
 			this.docSelectors[0].value = "";
 			this.guessLog.push(userGuess)
-			document.getElementById('previous').innerText = guessLog;
-			document.getElementById('previousLength').innerText = guessLog.length
+			document.getElementById('previous').innerText = this.guessLog;
+			document.getElementById('previousLength').innerText = this.guessLog.length
 			return
 		}
 		document.getElementById("textOutput").innerText = "Correct!";
@@ -52,7 +52,7 @@ class Game {
 		this.playSound("correct");
 	}
 	check() {
-		if (difficulty === "easy") {
+		if (this.difficulty === "easy") {
 			if (this.guessLog.length == 10) this.gameOver();
 			return
 		}
