@@ -4,10 +4,11 @@
 	<title>Higher or Lower Game</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<script type="text/javascript" src="./js/script.js"></script>
-
-
+	<script>
+	let game;
+	</script>
 </head>
-<body onload="init()">
+<body onload="game=new Game()">
 
 	<!-- Container -->
 	<div id="container" class="textBlue">
@@ -16,19 +17,19 @@
 		<div class="panel ">
 			<h2 class="">I have a random number<br> between 1-100</h2>
 			<h3 class="">Dare to guess?</h3><hr>
-			<button class = "myButton1" onclick="newGame()">New Game</button>
+			<button class = "myButton1" onclick="game.newGame()">New Game</button>
 
 		</div>
 		<div class="panel">
 			<h3 id="iu">Difficulty: Easy<br>(10 guesses)</h3>
-			<input type="image" src="./img/switch-level-off.png" class="difficulty" onclick="changeDifficulty()" id="id">
+			<input type="image" src="./img/switch-level-off.png" class="difficulty" onclick="game.changeDifficulty()" id="id">
 
 		</div>
 
 		<!-- Middle Panel -->
 		<div class="panel">
 			<h3 id="textOutput" class="">Enter your guess below & press "enter"</h3>
-			<input  type="number" id="inputBox" onchange="main()" >
+			<input type="number" id="inputBox" onchange="game.main()" >
 			<p>Number of previous attempts: <span id="previousLength" >0</span></p>
 		</div>
 
